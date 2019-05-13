@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "server-watch": "nodemon npm start"
   },
   "dependencies": {
     "body-parser": "~1.18.2",

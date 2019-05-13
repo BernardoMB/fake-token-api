@@ -51,6 +51,13 @@ app.post('/login-with-token', (req, res, next) => {
   console.log('POST /login-with-token ');
   const token = req.body.token;
   const isValidToken = true;
+  
+  const seconds = 0;
+  for (let i = 1; i <= seconds; i++) {
+    setTimeout(() => {
+      console.log(i);
+    }, i * 1000);
+  }
   setTimeout(() => {
     if (isValidToken) {
       res.status(200).json({
@@ -62,7 +69,7 @@ app.post('/login-with-token', (req, res, next) => {
         status: 'error'
       });
     }
-  }, 0);
+  }, seconds * 1000);
 });
 
 app.get('/status', (req, res, next) => {
