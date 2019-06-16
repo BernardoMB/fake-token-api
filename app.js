@@ -52,7 +52,7 @@ app.post('/login-with-token', (req, res, next) => {
   const token = req.body.token;
   const isValidToken = true;
   
-  const seconds = 0;
+  const seconds = 5;
   for (let i = 1; i <= seconds; i++) {
     setTimeout(() => {
       console.log(i);
