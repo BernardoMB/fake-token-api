@@ -4,11 +4,11 @@
     "server-watch": "nodemon npm start"
   },
   "dependencies": {
-    "body-parser": "~1.18.2",
+    "body-parser": "~1.20.1",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.4",
     "dotenv-flow": "^0.3.0-rc.1",
-    "express": "~4.15.5",
+    "express": "~4.18.2",
     "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
